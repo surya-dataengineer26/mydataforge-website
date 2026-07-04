@@ -417,6 +417,8 @@ text-align:center;
 
 transition:.35s;
 
+color: #ffffff;
+
 }
 
 .tech-card:hover{
@@ -663,6 +665,8 @@ background:#07111f;
 position:relative;
 
 text-align:center;
+
+color: #ffffff;
 
 }
 
@@ -1924,6 +1928,8 @@ padding:40px;
 border-radius:20px;
 
 height:100%;
+
+color: #ffffff;
 
 }
 
