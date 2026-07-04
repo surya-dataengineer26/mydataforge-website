@@ -1,117 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>MyDataForge | Data Engineering & AI Training Institute</title>
 
     <!-- Bootstrap -->
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Bootstrap Icons -->
-
-    <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <!-- Google Font -->
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
-
     <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Top Announcement Bar Styles */
+        .top-announcement-bar {
+            background: linear-gradient(90deg, #ff4500, #ff0000);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-weight: bold;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1040;
+        }
+        
+        /* Adjusting Navbar position because of top bar */
+        .custom-navbar {
+            top: 44px !important; /* Moves navbar down so it doesn't overlap top bar */
+        }
+        
+        /* FIX: Navbar Book Free Demo Button visibility fix */
+        .custom-navbar .btn-demo-orange {
+            color: #ffffff !important; /* White Text */
+            border: 2px solid #ff6b00 !important; /* Orange Border */
+            background-color: transparent !important;
+            font-weight: 600;
+            padding: 8px 20px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        .custom-navbar .btn-demo-orange:hover {
+            background-color: #ff6b00 !important; /* Full Orange on Hover */
+            color: #ffffff !important;
+            box-shadow: 0 0 15px rgba(255, 107, 0, 0.4);
+        }
+        
+        /* Adjusting Hero section spacing */
+        .hero-section {
+            padding-top: 140px !important;
+        }
 
-</head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>MyDataForge | Learn Data Engineering & AI</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+        /* Demo Card Styling on the Right Side */
+        .demo-card-right {
+            background-color: #0b132b;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 35px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            max-width: 480px;
+            margin: 0 auto;
+        }
+        .demo-card-right .card-tag {
+            color: #ff6b00;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: block;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        .demo-card-right .card-title {
+            color: #ffffff;
+            font-size: 1.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+            margin-bottom: 25px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 15px;
+        }
+        .demo-card-right .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .demo-card-right .feature-list li {
+            color: #d1d5db;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .demo-card-right .feature-list li i {
+            color: #8b5cf6; /* Purple Checkmark */
+            font-size: 1.3rem;
+            margin-right: 15px;
+        }
+    </style>
 </head>
 
 <body>
 
+<!-- ===========================================
+     TOP ANNOUNCEMENT BAR
+============================================ -->
+<div class="top-announcement-bar">
+    🔥 FREE DEMO CLASS BEFORE ENROLLMENT! BOOK YOUR FREE DEMO TODAY! 👇
+</div>
+
 <!-- ===========================
      PREMIUM NAVBAR
 =========================== -->
-
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
-
     <div class="container">
 
-        <a class="navbar-brand" href="index.html">
-
-            <img src="logo.png"
-                 alt="MyDataForge">
-
+        <!-- Logo and Text aligned side-by-side -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="logo.png" alt="MyDataForge" class="me-2">
+            <div class="brand-text-wrapper">
+                <span class="brand-title">DATA<span class="orange-text">FORGE</span></span>
+                <span class="brand-subtitle">INSTITUTE OF TECHNOLOGY</span>
+            </div>
         </a>
 
         <button class="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#mainMenu">
-
             <i class="bi bi-list"></i>
-
         </button>
 
-        <div class="collapse navbar-collapse"
-             id="mainMenu">
-
-                <ul class="navbar-nav ms-auto align-items-lg-center">
-                
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                
-                    <li class="nav-item">
-                        <a class="nav-link" href="#courses">Courses</a>
-                    </li>
-                
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                
-                    <li class="nav-item ms-lg-3">
-                    
-                        <a href="#contact" class="btn hero-btn">
-                        
-                            Book Free Demo
-                        
-                        </a>
-                    
-                    </li>
-                
-                </ul>
-
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active-link" href="#courses">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <!-- FIX: Added 'color fix' and verified href link -->
+                <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                    <a class="btn btn-demo-orange" href="#demo">Book Free Demo</a>
+                </li>
+            </ul>
         </div>
 
     </div>
-
 </nav>
 
-<!-- Hero -->
 <!-- ===========================================
- HERO SECTION
+     HERO SECTION
 ============================================ -->
-
 <section id="home" class="hero-section">
 
     <div class="hero-bg"></div>
@@ -120,89 +178,70 @@
 
         <div class="row align-items-center">
 
+            <!-- LEFT SIDE: Text and Content -->
             <div class="col-lg-6">
 
                 <span class="hero-badge">
-
                     🚀 Industry Ready Data Engineering Training
-
                 </span>
 
                 <h1 class="hero-title">
-
                     Build Your Future
-
                     <span>
-
                         in Data Engineering
-
                     </span>
-
                 </h1>
 
                 <p class="hero-subtitle">
-
                     Master Snowflake, dbt, SQL, Python, Azure,
                     Databricks and Machine Learning with
                     real-world projects and job support.
-
                 </p>
 
                 <div class="hero-buttons">
-
-                    <a href="#courses" class="btn hero-btn">
-                    
-                    Explore Courses
-                    
-                    </a>
-
-                    <a href="#contact" class="btn hero-btn-outline">
-                    
-                    Book Free Demo
-                    
-                    </a>
-
+                    <a href="#courses" class="btn hero-btn">Explore Courses</a>
+                    <a href="#demo" class="btn hero-btn-outline">Book Free Demo</a>
                 </div>
 
                 <!-- Statistics -->
-
                 <div class="hero-stats">
-
                     <div>
-
                         <h2>500+</h2>
-
                         <p>Students</p>
-
                     </div>
-
                     <div>
-
                         <h2>10+</h2>
-
                         <p>Years</p>
-
                     </div>
-
                     <div>
-
                         <h2>50+</h2>
-
                         <p>Projects</p>
-
                     </div>
-
                 </div>
 
             </div>
 
-            <div class="col-lg-6">
-
-                <div class="hero-image">
-
-                    <img src="banner.png"
-                         class="img-fluid">
-
+            <!-- RIGHT SIDE: Free Demo Card -->
+            <div class="col-lg-6 mt-5 mt-lg-0">
+                
+                <div class="demo-card-right">
+                    <span class="card-tag">Free Demo Class</span>
+                    <h3 class="card-title">Before Enrollment</h3>
+                    
+                    <ul class="feature-list">
+                        <li>
+                            <i class="bi bi-check-lg"></i> 
+                            Real-World Projects Setup
+                        </li>
+                        <li>
+                            <i class="bi bi-check-lg"></i> 
+                            End-to-End Enterprise Design
+                        </li>
+                        <li>
+                            <i class="bi bi-check-lg"></i> 
+                            Complete Interview Readiness Framework
+                        </li>
+                    </ul>
                 </div>
 
             </div>
@@ -212,6 +251,24 @@
     </div>
 
 </section>
+
+<!-- ===========================================
+     DEMO SECTION (Target Link for Buttons)
+============================================ -->
+<!-- Note: If you have a separate registration form or contact form below, 
+     make sure its section id is set to id="demo" so that the button scrolls exactly there. -->
+<section id="demo" style="padding: 60px 0; background-color: #0b132b; color: white; text-align: center;">
+    <div class="container">
+        <h2>Book Your Free Demo Class</h2>
+        <p>Our team will contact you shortly with the schedule.</p>
+        <!-- Add your form or contact info here -->
+    </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 <section class="technology-strip">
 
 <div class="container">
