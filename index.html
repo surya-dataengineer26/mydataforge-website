@@ -18,30 +18,38 @@
     <link rel="stylesheet" href="style.css">
     
     <style>
-        /* Top Announcement Bar Styles */
-        .top-announcement-bar {
-            background: linear-gradient(90deg, #ff4500, #ff0000);
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            font-weight: bold;
-            font-size: 1rem;
-            letter-spacing: 0.5px;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1040;
-        }
-        
-        /* Adjusting Navbar position because of top bar */
+        /* Navbar positioned back to top since red bar is removed */
         .custom-navbar {
-            top: 44px !important; /* Moves navbar down so it doesn't overlap top bar */
+            top: 0 !important;
+            background-color: #060b19; /* Ensuring dark professional bg */
+            padding: 15px 0;
+        }
+
+        /* Styling to bring logo text into a clean look like the screenshot */
+        .brand-text-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .brand-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+            line-height: 1.2;
+        }
+        .brand-subtitle {
+            font-size: 0.65rem;
+            font-weight: 600;
+            color: #a0aec0;
+            letter-spacing: 1px;
+            text-transform: uppercase;
         }
         
-        /* FIX: Navbar Book Free Demo Button visibility fix */
+        /* Navbar Book Free Demo Button styling */
         .custom-navbar .btn-demo-orange {
-            color: #ffffff !important; /* White Text */
-            border: 2px solid #ff6b00 !important; /* Orange Border */
+            color: #ffffff !important; 
+            border: 2px solid #ff6b00 !important; 
             background-color: transparent !important;
             font-weight: 600;
             padding: 8px 20px;
@@ -50,14 +58,14 @@
         }
         
         .custom-navbar .btn-demo-orange:hover {
-            background-color: #ff6b00 !important; /* Full Orange on Hover */
+            background-color: #ff6b00 !important; 
             color: #ffffff !important;
             box-shadow: 0 0 15px rgba(255, 107, 0, 0.4);
         }
         
-        /* Adjusting Hero section spacing */
+        /* Standard hero section padding from top */
         .hero-section {
-            padding-top: 140px !important;
+            padding-top: 120px !important;
         }
 
         /* Demo Card Styling on the Right Side */
@@ -104,7 +112,7 @@
             align-items: center;
         }
         .demo-card-right .feature-list li i {
-            color: #8b5cf6; /* Purple Checkmark */
+            color: #8b5cf6; 
             font-size: 1.3rem;
             margin-right: 15px;
         }
@@ -113,13 +121,6 @@
 
 <body>
 
-<!-- ===========================================
-     TOP ANNOUNCEMENT BAR
-============================================ -->
-<div class="top-announcement-bar">
-    🔥 FREE DEMO CLASS BEFORE ENROLLMENT! BOOK YOUR FREE DEMO TODAY! 👇
-</div>
-
 <!-- ===========================
      PREMIUM NAVBAR
 =========================== -->
@@ -127,10 +128,10 @@
     <div class="container">
 
         <!-- Logo and Text aligned side-by-side -->
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-            <img src="logo.png" alt="MyDataForge" class="me-2">
+        <a class="navbar-brand d-flex align-items-center" href="index.html" style="text-decoration: none;">
+            <img src="logo.png" alt="MyDataForge" class="me-2" style="height: 40px; width: auto;">
             <div class="brand-text-wrapper">
-                <span class="brand-title">DATA<span class="orange-text">FORGE</span></span>
+                <span class="brand-title">DATAFORGE</span>
                 <span class="brand-subtitle">INSTITUTE OF TECHNOLOGY</span>
             </div>
         </a>
@@ -157,7 +158,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
-                <!-- FIX: Added 'color fix' and verified href link -->
                 <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
                     <a class="btn btn-demo-orange" href="#demo">Book Free Demo</a>
                 </li>
@@ -252,16 +252,11 @@
 
 </section>
 
-<!-- ===========================================
-     DEMO SECTION (Target Link for Buttons)
-============================================ -->
-<!-- Note: If you have a separate registration form or contact form below, 
-     make sure its section id is set to id="demo" so that the button scrolls exactly there. -->
+<!-- DEMO SECTION -->
 <section id="demo" style="padding: 60px 0; background-color: #0b132b; color: white; text-align: center;">
     <div class="container">
         <h2>Book Your Free Demo Class</h2>
         <p>Our team will contact you shortly with the schedule.</p>
-        <!-- Add your form or contact info here -->
     </div>
 </section>
 
@@ -1981,10 +1976,9 @@ CONTACT SECTION
 
                 <p class="footer-text">
 
-                    MyDataForge is dedicated to preparing students and
-                    professionals for successful careers in Data Engineering,
-                    Cloud, Analytics, and AI through practical, industry-focused
-                    training.
+                    Build Your Future in Data Engineering
+                    Master Snowflake, dbt, SQL, Python, Azure, Databricks and Machine Learning 
+                    with real-world projects and job support.
 
                 </p>
 
